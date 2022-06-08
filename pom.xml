@@ -21,6 +21,18 @@
             </roles>
             <timezone>Europe/Vienna</timezone>
         </developer>
+
+        <developer>
+            <id>ivanatoshevaaleksoska</id>
+            <name>Ivana Tosheva Aleksoska</name>
+            <email>ivana.toshevaaleksoska@edu.fh-joanneum.at</email>
+            <organization>FH JOANNEUM</organization>
+            <organizationUrl>https://www.fh-joanneum.at/iit</organizationUrl>
+            <roles>
+                <role>Student</role>
+            </roles>
+            <timezone>Europe/Vienna</timezone>
+        </developer>
     </developers>
 
 
