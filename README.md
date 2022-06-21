@@ -28,12 +28,12 @@ date: 08.06.2022
   add information.
   - [x] Have a team member add the address of the Git repository. - Heigl
   - [x] Make your changes available to your colleagues.
-- [ ] There are three bugs in the existing code - find them and fix them.
-  - [ ] Implement the error correction in a separate branch and merge back the results.
-  - [ ] Make your changes available to your colleagues.
-  - [ ] Don't forget to update the task list as well.
+- [x] There are three bugs in the existing code - find them and fix them. - Heigl
+  - [x] Implement the error correction in a separate branch and merge back the results.
+  - [x] Make your changes available to your colleagues.
+  - [x] Don't forget to update the task list as well.
 - [ ] Create a new implementation parallel to the given version:
-  - [ ] Integrate the Drinks interface and an implementing class into the project.
+  - [x] Integrate the Drinks interface and an implementing class into the project. - Tosheva
   - [ ] Create a queue version that allows to manage drinks in a queue.
   - [ ] Distribute the methods specified by the interface so that each group member creates approximately the same number of methods. Implement each of your parts in a separate branch.
   - [ ] Create JavaDoc comments for the already provided classes as well as the new variant.

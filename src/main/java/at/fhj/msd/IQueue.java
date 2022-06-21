@@ -1,29 +1,47 @@
 package at.fhj.msd;
 
-// fastly written (not really nice) comments but good enough to understand
+import java.util.NoSuchElementException;
+
+/**
+ * Class represents a queue
+ */
+
 public interface IQueue {
-  /* 
-  add object to queue, return true if works, otherwise false
-  */
+  /**
+   * Adds an object to a queue, return.
+   *
+   * @param obj added String
+   * @return true if works, otherwise false
+   */
   public abstract boolean offer(String obj);
 
-  /* 
-  returns and deletes first element; null if no element in there
+  /**
+   * Returns and deletes the first element.
+   *
+   * @return first element if exists, otherwise null
    */
   public abstract String poll();
 
-  /* 
-  like poll but if no elment exists NoSuchElementException is throwin instead of null return value
+  /**
+   * Returns and deletes the first element.
+   *
+   * @throws NoSuchElementException if no element exists
+   * @return first element if exists
    */
   public abstract String remove();
 
-  /* 
-  gives first element but does not delete, null if nothing there
+  /**
+   * <p>Returns the first element.</p>
+   *
+   * @return first element if exists, otherwise null
    */
   public abstract String peek();
 
-  /*
-  like peek but NoSuchElementException instead of null
+  /**
+   * Returns the first element.
+   *
+   * @throws NoSuchElementException if no element exists
+   * @return first element if exists
    */
   public abstract String element();
 }
