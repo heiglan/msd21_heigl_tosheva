@@ -19,8 +19,7 @@ public interface Drink {
          */
         public abstract boolean isAlcoholic();
 
-
-        public String getName();
+        public String getName() ;
 
         public void setName(String name);
 }
