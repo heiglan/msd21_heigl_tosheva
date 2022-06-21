@@ -14,17 +14,22 @@ import java.util.NoSuchElementException;
  */
 
 public class StringQueue implements IQueue {
-
+  /**
+   * List of drinks
+   */
   private List<String> elements = new ArrayList<String>();
   private int maxSize = 5;
 
-
+  /**
+   *
+   * @param maxsize shows the max size of list
+   */
   public StringQueue(int maxsize) {
     maxSize = maxSize;
   }
 
   /**
-   * <p>Adds an object to a queue, return.</p>
+   * Adds an object to a queue, return.
    *
    * @param obj added String
    * @return true if works, otherwise false
@@ -40,7 +45,7 @@ public class StringQueue implements IQueue {
   }
 
   /**
-   * <p>Returns and deletes the first element.</p>
+   * Returns and deletes the first element.
    *
    * @return first element if exists, otherwise null
    */
@@ -56,7 +61,7 @@ public class StringQueue implements IQueue {
   }
 
   /**
-   * <p>Returns and deletes the first element.</p>
+   * Returns and deletes the first element.
    *
    * @throws NoSuchElementException if no element exists
    * @return first element if exists
@@ -71,7 +76,7 @@ public class StringQueue implements IQueue {
   }
 
   /**
-   * <p>Returns the first element.</p>
+   * Returns the first element.
    *
    * @return first element if exists, otherwise null
    */
@@ -88,7 +93,7 @@ public class StringQueue implements IQueue {
 
 
   /**
-   * <p>Returns the first element.</p>
+   * Returns the first element.
    *
    * @throws NoSuchElementException if no element exists
    * @return first element if exists
