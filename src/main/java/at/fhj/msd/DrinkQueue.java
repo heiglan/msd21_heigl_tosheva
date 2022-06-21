@@ -8,12 +8,12 @@ import java.util.NoSuchElementException;
  * Class that implements a Queue.
  *
  */
-public class DrinkQueue{
-    private List<String> elements = new ArrayList<String>();
+public class DrinkQueue implements IDrinkQueue {
+    private List<SimpleDrink> elements = new ArrayList<SimpleDrink>();
     private int maxSize = 5;
 
 
-    public StringQueue(int maxsize) {
+    public DrinkQueue(int maxsize) {
         maxSize = maxSize;
     }
 
@@ -24,7 +24,7 @@ public class DrinkQueue{
      * @return true if works, otherwise false
      */
     @Override
-    public boolean offer(String obj) {
+    public boolean offer(SimpleDrink obj) {
         if (elements.size() != maxSize)
             elements.add(obj);
         else
@@ -39,8 +39,8 @@ public class DrinkQueue{
      * @return first element if exists, otherwise null
      */
     @Override
-    public String poll() {
-        String element = peek();
+    public SimpleDrink poll() {
+        SimpleDrink element = peek();
 
         if (elements.size() != 0) {
             elements.remove(0);
@@ -56,8 +56,8 @@ public class DrinkQueue{
      * @return first element if exists
      */
     @Override
-    public String remove() {
-        String element = poll();
+    public SimpleDrink remove() {
+        SimpleDrink element = poll();
         if (element == null)
             throw new NoSuchElementException("there's no element any more");
 
@@ -70,8 +70,8 @@ public class DrinkQueue{
      * @return first element if exists, otherwise null
      */
     @Override
-    public String peek() {
-        String element;
+    public SimpleDrink peek() {
+        SimpleDrink element;
         if (elements.size() > 0)
             element = elements.get(0);
         else
@@ -88,8 +88,8 @@ public class DrinkQueue{
      * @return first element if exists
      */
     @Override
-    public String element() {
-        String element = peek();
+    public SimpleDrink element() {
+        SimpleDrink element = peek();
         if (element == null)
             throw new NoSuchElementException("there's no element any more");
 

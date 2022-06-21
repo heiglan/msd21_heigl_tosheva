@@ -8,7 +8,7 @@ import java.util.NoSuchElementException;
 
 public interface IQueue {
   /**
-   * Adds an object to a queue, return.
+   * <p>Adds an object to a queue, return .</p>
    *
    * @param obj added String
    * @return true if works, otherwise false
