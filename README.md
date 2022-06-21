@@ -21,8 +21,8 @@ date: 08.06.2022
   - [x] Write down the project name and the names of all group members. 
   - [x] Read the whole tutorial and use the file as a task list (Markdown Flavor).
 - [x] Extend your pom.xml with the relevant libraries or configurations to implement the following parts of the task. - Heigl
-    - [x] In addition, each group member should have their own developers - Tosheva, Heigl
-  add information.
+    - [x] In addition, each group member should add their own developers' information.- Tosheva, Heigl
+
   - [x] Have a team member add the address of the Git repository. - Heigl
 - [x] There are three bugs in the existing code - find them and fix them. - Heigl
   - [x] Implement the error correction in a separate branch and merge back the results.
@@ -43,3 +43,6 @@ date: 08.06.2022
 - [x] Finalizing the exercise - Tosheva, Heigl
   - [x] Check your commit history3 using git log.
   - [x] Check your repository on github.com.
+
+- To view the details of the contribution from [Ivana Tosheva Aleksoska](tosheva.md);
+- To view the details of the contribution from [Anzhelika Heigl](heigl.md);
