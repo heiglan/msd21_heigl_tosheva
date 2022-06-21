@@ -1,15 +1,8 @@
-package at.fhj.msd;
-
-import javax.xml.namespace.QName;
-import java.util.ArrayList;
-import java.util.List;
-/**
- * Class that implements a Queue.
- *
+package at.fhj.msd;/**
+ * Class represents a simple drink liquid which can be used in
+ * drinks
  */
-
-public class SimpleDrink implements Drink{
-    private List<String> elements = new ArrayList<String>();
+public class SimpleDrink extends Drink{
     /**
      * uses only one liquid
      */
@@ -22,13 +15,8 @@ public class SimpleDrink implements Drink{
      * @param l only liquid in drink
      */
     SimpleDrink(String name, Liquid l){
-       name=name;
+        super(name);
         this.l = l;
-    }
-
-    @Override
-    public void Drink(String name) {
-
     }
 
     /**
@@ -61,15 +49,5 @@ public class SimpleDrink implements Drink{
             return true;
         }
         return false;
-    }
-
-    @Override
-    public String getName() {
-        return null;
-    }
-
-    @Override
-    public void setName(String name) {
-
     }
 }
