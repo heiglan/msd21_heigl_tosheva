@@ -1,0 +1,16 @@
+
+<project name="msd21_heigl_tosheva">
+    <publishDate position="right"/>
+    <version position="left"/>
+    <body>
+        <menu name="Overview">
+            <item name="Introduction" href="index.html"/>
+            <item name="Test" href="test.html"/>
+            <item name="DrinkQueue" href="drinkQueue.html"/>
+            <item name="StringQueue" href="stringQueue.html"/>
+        </menu>
+        <menu ref="reports"/>
+        <menu ref="parent"/>
+        <menu ref="modules"/>
+    </body>
+</project>
