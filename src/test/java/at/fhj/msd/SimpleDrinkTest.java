@@ -4,11 +4,15 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+
 /**
  * element method test
  * the expected result is compared with the result from the element method
  */
+
+
 public class SimpleDrinkTest {
+
     private SimpleDrink simpleDrinkTest;
     private SimpleDrink simpleDrinkTest2;
     private Liquid l1;
