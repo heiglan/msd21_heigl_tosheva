@@ -34,10 +34,10 @@ date: 08.06.2022
   - [x] Don't forget to update the task list as well.
 - [ ] Create a new implementation parallel to the given version:
   - [x] Integrate the Drinks interface and an implementing class into the project. - Tosheva
-  - [ ] Create a queue version that allows to manage drinks in a queue.
-  - [ ] Distribute the methods specified by the interface so that each group member creates approximately the same number of methods. Implement each of your parts in a separate branch.
-  - [ ] Create JavaDoc comments for the already provided classes as well as the new variant.
-  - [ ] Make your changes available to your colleagues.
+  - [x] Create a queue version that allows to manage drinks in a queue. - Heigl
+  - [x] Distribute the methods specified by the interface so that each group member creates approximately the same number of methods. Implement each of your parts in a separate branch.
+  - [x] Create JavaDoc comments for the already provided classes as well as the new variant.
+  - [x] Make your changes available to your colleagues.
 - [ ] Create tests
   - [ ] to get 100% test coverage for the existing implementation.
   - [ ] Create another test file and test the new Drinks version with a class of your choice. Achieve 100% test coverage
