@@ -2,6 +2,10 @@ package at.fhj.msd;
 
 import java.util.NoSuchElementException;
 
+/**
+ * Class represents a drink queue
+ */
+
 public interface IDrinkQueue {
     /**
      * Adds an object to a queue, return.
@@ -27,7 +31,7 @@ public interface IDrinkQueue {
     public abstract SimpleDrink remove();
 
     /**
-     * <p>Returns the first element.</p>
+     * Returns the first element.
      *
      * @return first element if exists, otherwise null
      */

@@ -8,7 +8,7 @@ import java.util.NoSuchElementException;
 
 public interface IQueue {
   /**
-   * <p>Adds an object to a queue, return .</p>
+   * Adds an object to a queue, return .
    *
    * @param obj added String
    * @return true if works, otherwise false
@@ -31,7 +31,7 @@ public interface IQueue {
   public abstract String remove();
 
   /**
-   * <p>Returns the first element.</p>
+   * Returns the first element.
    *
    * @return first element if exists, otherwise null
    */

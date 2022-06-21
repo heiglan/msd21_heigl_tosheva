@@ -9,16 +9,30 @@ import java.util.NoSuchElementException;
  *
  */
 public class DrinkQueue implements IDrinkQueue {
+
+    /**
+     * List of drinks
+     *
+     */
     private List<SimpleDrink> elements = new ArrayList<SimpleDrink>();
+
+    /**
+     * size of the list
+     *
+     */
     private int maxSize = 5;
 
-
+    /**
+     * Creates a DrinkQueue object with given maximum size
+     *
+     * @param maxsize maximus size of the list
+     */
     public DrinkQueue(int maxsize) {
         maxSize = maxSize;
     }
 
     /**
-     * <p>Adds an object to a queue, return.</p>
+     * Adds an object to a queue, return.
      *
      * @param obj added String
      * @return true if works, otherwise false
@@ -34,7 +48,7 @@ public class DrinkQueue implements IDrinkQueue {
     }
 
     /**
-     * <p>Returns and deletes the first element.</p>
+     * Returns and deletes the first element.
      *
      * @return first element if exists, otherwise null
      */
@@ -50,7 +64,7 @@ public class DrinkQueue implements IDrinkQueue {
     }
 
     /**
-     * <p>Returns and deletes the first element.</p>
+     * Returns and deletes the first element.
      *
      * @throws NoSuchElementException if no element exists
      * @return first element if exists
@@ -65,7 +79,7 @@ public class DrinkQueue implements IDrinkQueue {
     }
 
     /**
-     * <p>Returns the first element.</p>
+     * Returns the first element.
      *
      * @return first element if exists, otherwise null
      */
@@ -82,7 +96,7 @@ public class DrinkQueue implements IDrinkQueue {
 
 
     /**
-     * <p>Returns the first element.</p>
+     * Returns the first element.
      *
      * @throws NoSuchElementException if no element exists
      * @return first element if exists
