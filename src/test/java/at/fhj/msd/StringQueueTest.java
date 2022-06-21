@@ -4,6 +4,11 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.NoSuchElementException;
+
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
+
 /**
  * Class that tests the String Queue implementation.
  *
@@ -12,6 +17,7 @@ import org.junit.jupiter.api.Test;
  */
 public class StringQueueTest {
     private StringQueue stringQueueTest;
+
 
     /**
      * set up method that sets the values for the tests
@@ -94,6 +100,16 @@ public class StringQueueTest {
 
         Assertions.assertEquals(expectedResult,result);
     }
+    /**
+     * test for the remove method
+     * the expected result is compared with the result fron the remove method in stringQueue
+     */
+    @Test
+    public void testRemove2(){
+        assertThrows(NoSuchElementException.class, () -> {
+            stringQueueTest.remove();
+        });
+    }
 
     /**
      * peek method test
@@ -105,6 +121,18 @@ public class StringQueueTest {
         stringQueueTest.offer((element));
         String result = stringQueueTest.peek();
         String expectedResult = "peek";
+
+        Assertions.assertEquals(expectedResult,result);
+    }
+    /**
+     * peek method test
+     * the expected result is compared with the result from the peek method with null
+     */
+    @Test
+    public void testPeek2(){
+
+        String result = stringQueueTest.peek();
+        String expectedResult = null;
 
         Assertions.assertEquals(expectedResult,result);
     }
@@ -121,5 +149,15 @@ public class StringQueueTest {
         String expectedResult= "element";
 
         Assertions.assertEquals(expectedResult,result);
+    }
+    /**
+     * element method test
+     * the expected result is compared with the result from the element method
+     */
+    @Test
+    public void testElement2(){
+        assertThrows(NoSuchElementException.class, () -> {
+            stringQueueTest.element();
+        });
     }
 }

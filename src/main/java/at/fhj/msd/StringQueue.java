@@ -71,7 +71,6 @@ public class StringQueue implements IQueue {
     String element = poll();
     if (element == null)
       throw new NoSuchElementException("there's no element any more");
-
     return element;
   }
 
