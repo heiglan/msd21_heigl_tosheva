@@ -1,43 +1,49 @@
 package at.fhj.msd;
 
-public class SimpleDrink implements Drinks{
+import javax.xml.namespace.QName;
+import java.util.ArrayList;
+import java.util.List;
 
+/**
+ * Class represents a simple drink liquid which can be used in
+ * drinks
+ */
+public class SimpleDrink implements Drink{
     /**
-     * name of the drink
+     * uses only one liquid
      */
-    protected String name;
-
+    protected Liquid l;
     /**
-     * Creates a Drink object with given name
+     * Creates a SimpleDrink object with given age and
+     * liquid
      *
-     * @param name name of the drink
-     *
+     * @param name name of drink
+     * @param l only liquid in drink
      */
-    @Override
-    public void Drink(String name) {
-
+    SimpleDrink(String name, Liquid l){
+        super(name);
+        this.l = l;
     }
 
     /**
-     * Calculates and returns volume of drink
+     * Returns volume of liquid l
      *
-     * @return the volume of drink in liter
+     * @return the volume of drink in litre
      */
     @Override
     public double getVolume() {
-        return 0;
+        return l.getVolume();
     }
 
     /**
-     * Calculates and returns the alcohol percentage
+     * Returns alcohol volume percent of liquid l
      *
-     * @return alcohol volume percent (e.g. 50)
+     * @return alcohol volume percent
      */
     @Override
     public double getAlcoholPercent() {
-        return 0;
+        return l.getAlcoholPercent();
     }
-
     /**
      * Gives information if drink is alcoholic or not
      *
@@ -45,18 +51,9 @@ public class SimpleDrink implements Drinks{
      */
     @Override
     public boolean isAlcoholic() {
-        if (getAlcoholPercent()==0)
+        if(l.getAlcoholPercent() > 0){
             return true;
+        }
         return false;
-    }
-
-    @Override
-    public String getName() {
-        return name;
-    }
-
-    @Override
-    public void setName(String name) {
-        this.name = name;
     }
 }

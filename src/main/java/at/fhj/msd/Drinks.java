@@ -1,6 +1,6 @@
 package at.fhj.msd;
 
-public interface Drinks {
+public interface Drink {
 
         /**
          * Creates a Drink object with given name
