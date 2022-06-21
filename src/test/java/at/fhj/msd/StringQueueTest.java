@@ -1,8 +1,10 @@
 package at.fhj.msd;
+import java.util.Locale;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
 
 /**
  * Class that tests the String Queue implementation.

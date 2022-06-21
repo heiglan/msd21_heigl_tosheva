@@ -1,10 +1,12 @@
 package at.fhj.msd;
 
+
 /**
  * Class represents a liquid which can be used in
  * drinks
  */
 public class Liquid {
+
         /**
          * name of liquid
          */
