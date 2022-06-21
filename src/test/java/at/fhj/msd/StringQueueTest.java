@@ -49,7 +49,7 @@ public class StringQueueTest {
     public void testPool(){
 
         String element = "one";
-        boolean offer = stringQueueTest.offer((element));
+        stringQueueTest.offer((element));
         String result = stringQueueTest.poll();
         String expectedResult = "one";
 
@@ -59,8 +59,8 @@ public class StringQueueTest {
     public void testRemove(){
         String element = "one";
         String element2 = "two";
-        boolean offer = stringQueueTest.offer((element));
-        boolean offer2 = stringQueueTest.offer(element2);
+        stringQueueTest.offer((element));
+        stringQueueTest.offer(element2);
         String result = stringQueueTest.remove();
         String expectedResult = "one";
 
@@ -69,7 +69,7 @@ public class StringQueueTest {
     @Test
     public void testPeek(){
         String element = "peek";
-        boolean offer = stringQueueTest.offer((element));
+        stringQueueTest.offer((element));
         String result = stringQueueTest.peek();
         String expectedResult = "peek";
 
@@ -78,9 +78,11 @@ public class StringQueueTest {
     @Test
     public void testElement(){
         String element = "element";
-        boolean offer = stringQueueTest.offer((element));
+        stringQueueTest.offer((element));
         String result = stringQueueTest.element();
 
         String expectedResult= "element";
+
+        Assertions.assertEquals(expectedResult,result);
     }
 }
