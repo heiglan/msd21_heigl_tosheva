@@ -5,9 +5,7 @@
     <body>
         <menu name="Overview">
             <item name="Introduction" href="index.html"/>
-            <item name="Test" href="test.html"/>
-            <item name="DrinkQueue" href="drinkQueue.html"/>
-            <item name="StringQueue" href="stringQueue.html"/>
+
         </menu>
         <menu ref="reports"/>
         <menu ref="parent"/>
